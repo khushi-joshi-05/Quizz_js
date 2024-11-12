@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(194, 154, 231);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#quiz {
+    margin: 5rem auto;
+    border: 0.25rem grey solid;
+    background-color: white;
+    max-width: 800px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question, .ans, .btn {
+    padding: 1rem 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border: 1px grey solid;
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+}
+
+#submit, #reload {
+    font-size: 1.2rem;
+    padding: 0.3rem 2rem;
+    border: 1px grey solid;
+    border-radius: 15px;
+    background-color: rgb(171, 150, 245);
+    cursor: pointer;
+}
+
+.result {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    #quiz {
+        margin: 2rem auto;
+        width: 90%;
+    }
+
+    .question, .ans, .btn {
+        padding: 1rem;
+    }
+
+    li {
+        padding: 0.5rem;
+    }
+
+    #submit, #reload {
+        font-size: 1rem;
+        padding: 0.3rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #quiz {
+        margin: 1rem auto;
+        width: 95%;
+    }
+
+    .question, .ans, .btn {
+        padding: 0.5rem;
+    }
+
+    li {
+        padding: 0.5rem;
+    }
+
+    #submit, #reload {
+        font-size: 1rem;
+        padding: 0.3rem 1rem;
+    }
+}
